@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:background="@drawable/shape"
-            android:text="搜索"/>
+            android:text="查询"/>
         <Button
             style="?android:attr/buttonBarButtonStyle"
             android:id="@+id/delete"
@@ -38,6 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:background="@drawable/shape" />
+
 
     </LinearLayout>
 

@@ -4,7 +4,7 @@ import android.net.Uri;
 import android.provider.BaseColumns;
 
 public final class Words {
-    public static final String AUTHORITY="com.example.notebook";//定义contentprovider的Authority
+    public static final String AUTHORITY="com.example.notebook.provider";//定义contentprovider的Authority
 
     //数据列的列名
     public static final class Word implements BaseColumns{

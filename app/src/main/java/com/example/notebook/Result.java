@@ -30,7 +30,7 @@ public class Result extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.result);
+        setContentView(R.layout.activity_result);
 
         final ListView listView=(ListView)findViewById(R.id.show);
         Intent intent=getIntent();

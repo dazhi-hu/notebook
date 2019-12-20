@@ -31,7 +31,7 @@ public class EditItem extends Activity{
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.edit);
+        setContentView(R.layout.activity_edit_item);
 
         Intent intent=getIntent();
         Bundle bundle=intent.getExtras();

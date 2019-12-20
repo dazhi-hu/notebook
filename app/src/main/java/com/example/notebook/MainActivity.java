@@ -23,9 +23,8 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
-
+    private MyDatabaseHelper dbHelper;
     ActionBar actionBar;
-
     ContentResolver contentResolver;
     Button insert=null;
     Button search=null;
@@ -39,6 +38,9 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        dbHelper = new MyDatabaseHelper(this,"book.db",1);
+        dbHelper.getWritableDatabase();
 
         actionBar=getActionBar();
         //actionBar.setDisplayShowHomeEnabled(false);
@@ -64,6 +66,7 @@ public class MainActivity extends Activity {
                 else{
                     ContentValues values=new ContentValues();
                     values.put(Words.Word.WORD, word);
+                    System.out.println(word);
                     values.put(Words.Word.DETAIL, detail);
                     contentResolver.insert(Words.Word.DICT_CONTENT_URI, values);
                     Toast.makeText(MainActivity.this, "添加单词成功", Toast.LENGTH_LONG).show();

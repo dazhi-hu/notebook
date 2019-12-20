@@ -48,9 +48,9 @@ public class DictProvider extends ContentProvider{
         // TODO Auto-generated method stub
         switch(matcher.match(arg0)){
             case WORDS:
-                return "vnd.android.cursor.dir/com.ssdut.dictprovider";
+                return "vnd.android.cursor.dir/com.example.notebook";
             case WORD:
-                return "vnd.android.cursor.item/com.ssdut.dictprovider";
+                return "vnd.android.cursor.item/com.example.notebook";
             default:
                 throw new IllegalArgumentException("位置Uri:"+arg0);
         }
