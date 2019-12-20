@@ -1,0 +1,115 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.example.notebook.MainActivity" >
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/insert"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:text="添加"/>
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/search"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape"
+            android:text="搜索"/>
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/delete"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/word"
+            android:background="@drawable/edittextshape"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="3dp"
+            android:inputType="textUri"
+            android:hint="@string/word" />
+
+        <ImageButton
+            android:id="@+id/clear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/clear"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:inputType="text"
+            android:id="@+id/detail"
+            android:background="@drawable/edittextshape"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="3dp"
+            android:hint="@string/detail"
+            android:textColorHint="#AAAAAA" />
+        <ImageButton
+            android:id="@+id/clear2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/clear"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="400dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:background="@drawable/edittextshape"
+            android:inputType="textUri"
+            android:id="@+id/search_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="3dp"
+            android:hint="@string/search" />
+
+        <ImageButton
+            android:id="@+id/clear3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/clear"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>

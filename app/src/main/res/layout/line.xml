@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/words"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:id="@+id/word_list"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:layout_gravity="center_vertical"
+            android:textColor="#000000"
+            android:inputType="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/explain"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:id="@+id/detail_list"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="16sp"
+            android:background="#CCCCCC"
+            android:layout_gravity="center_vertical"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:inputType="none" />
+
+    </LinearLayout>
+</LinearLayout>
